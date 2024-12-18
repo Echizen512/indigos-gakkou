@@ -1,0 +1,49 @@
+---
+import Layout from "@layouts/Layout.astro";
+import Container from "@components/container.astro";
+import Sectionhead from "@components/sectionhead.astro";
+import PricingCard from "@components/pricing.astro";
+
+const pricing = [
+  {
+    name: "Personal",
+    price: "Free",
+    popular: false,
+    features: [
+      "Lifetime free",
+      "Up to 3 users",
+      "Unlimited Pages",
+      "Astro Sub domain",
+      "Basic Integrations",
+      "Community Support",
+    ],
+    button: {
+      text: "Get Started",
+      link: "/",
+    },
+  },
+];
+---
+
+<Layout title="sedes">
+  <Container>
+    <Sectionhead>
+      <Fragment slot="title">
+        <span class="flex items-center justify-center gap-2 text-blue-700">
+          <i class="fas fa-building"></i> Sedes
+      </span>
+      
+      </Fragment>
+      <Fragment slot="desc">
+        Estamos ubicados en La Victoria y Maracay
+      </Fragment>
+    </Sectionhead>
+
+    <div class="grid gap-10 mx-auto max-w-screen-lg mt-12">
+      {pricing.map((item) => (
+        <PricingCard plan={item} />
+      ))}
+    </div>
+  </Container>
+</Layout>
+

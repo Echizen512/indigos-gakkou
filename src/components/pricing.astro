@@ -1,0 +1,34 @@
+---
+import { Picture } from "astro:assets";
+import MaracayImage from "assets/maracay.jpg";
+import LavictoriaImage from "assets/lavictoria.jpg";
+---
+
+<div class="grid grid-cols-1 md:grid-cols-2 gap-8 mx-auto max-w-6xl mt-8">
+  <div class="relative bg-white rounded-xl shadow-xl overflow-hidden group transition-all transform hover:scale-105 hover:shadow-2xl">
+    <div class="relative w-full h-[600px] overflow-hidden rounded-t-xl">
+      <Picture
+        src={MaracayImage}
+        alt="Maracay, Bermudez"
+        sizes="(max-width: 800px) 150vw, 800px"
+        width={800}
+        height={600}
+        class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+  </div>
+
+  
+  <div class="relative bg-white rounded-xl shadow-xl overflow-hidden group transition-all transform hover:scale-105 hover:shadow-2xl">
+    <div class="relative w-full h-[600px] overflow-hidden rounded-t-xl">
+      <Picture
+        src={LavictoriaImage}
+        alt="La Victoria, Gladiadores Gym"
+        sizes="(max-width: 800px) 150vw, 800px"
+        width={800}
+        height={600}
+        class="w-full h-full object-cover object-center group-hover:scale-110 transition-transform duration-500"
+      />
+    </div>
+  </div>
+</div>

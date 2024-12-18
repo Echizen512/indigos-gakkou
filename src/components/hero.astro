@@ -1,0 +1,52 @@
+---
+import { Picture } from "astro:assets";
+import heroImage from "assets/hero.png";
+import Link from "@components/ui/link.astro";
+import { Icon } from "astro-icon/components";
+---
+
+<main
+  class="grid lg:grid-cols-2 items-center gap-10 py-16 md:py-24 px-6 bg-gradient-to-br from-blue-100 via-blue-100 to-blue-100">
+  <div class="flex justify-center items-center md:order-2">
+    <Picture
+      src={heroImage}
+      alt="Astronaut in the air"
+      widths={[300, 500, 700]}
+      sizes="(max-width: 768px) 50vw, 300px"
+      loading="eager"
+      format="avif"
+      class="w-56 h-auto rounded-lg shadow-lg transform hover:scale-105 transition-transform duration-300"
+    />
+  </div>
+
+  <div class="flex flex-col items-center text-center space-y-6 lg:space-y-8">
+    <h1
+      class="text-4xl lg:text-5xl xl:text-6xl font-extrabold text-blue-700 tracking-tight leading-tight">
+      INDIGOS GAKKOU
+    </h1>
+    <p class="text-md lg:text-lg text-slate-600 max-w-lg">
+      Academia de Baile Moderno y de Calle.
+    </p>
+    <p class="text-md lg:text-lg text-slate-600 max-w-lg">
+      ¡Despierta tu pasión por la danza y únete a una comunidad donde la
+      creatividad no tiene límites!
+    </p>
+
+    <div class="flex flex-col sm:flex-row gap-4 mt-4">
+      <a
+        href="https://www.instagram.com/tu_cuenta_de_instagram"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-purple-500 text-white font-semibold rounded-md shadow hover:bg-purple-700 transition-colors">
+        <i class="fab fa-instagram me-2"></i> Ir a Instagram
+      </a>
+      <a
+        href="https://wa.me/tu_numero_de_whatsapp"
+        target="_blank"
+        rel="noopener noreferrer"
+        class="px-6 py-3 bg-green-600 text-white font-semibold rounded-md shadow hover:bg-green-700 transition-colors">
+        <i class="fab fa-whatsapp me-2"></i> Ir a WhastApp
+      </a>
+    </div>
+  </div>
+</main>

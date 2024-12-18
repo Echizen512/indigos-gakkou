@@ -1,0 +1,133 @@
+---
+import { Icon } from "astro-icon/components";
+
+const features = [
+  {
+    title: "Hip Hop Dance",
+    description: "Aprende los movimientos y fundamentos de uno de los estilos más influyentes en la cultura urbana.",
+    icon: "mdi:account-group",
+  },
+  {
+    title: "House Dance",
+    description: "Desarrolla tu estilo personal y fluidez en la pista con ritmos y técnicas de House.",
+    icon: "mdi:home-heart",
+  },
+  {
+    title: "Vogue",
+    description: "Descubre el estilo Vogue con su actitud, técnica y expresividad.",
+    icon: "mdi:run",
+  },
+  {
+    title: "Coreografía",
+    description: "Explora la creación de secuencias de movimiento para espectáculos y competencias.",
+    icon: "mdi:note-text",
+  },
+  {
+    title: "Afro & Jazz",
+    description: "Incorpora influencias africanas y el estilo Jazz para enriquecer tu formación en danza.",
+    icon: "mdi:music-note-outline",
+  },
+  {
+    title: "Contemporáneo",
+    description: "Fusiona la técnica y expresión con un enfoque en la danza moderna.",
+    icon: "mdi:music-note-outline",
+  },
+];
+
+const levels = [
+  { title: "Básico", description: "Ideal para quienes inician su camino en la danza y buscan fundamentos sólidos." },
+  { title: "Intermedio", description: "Para estudiantes que desean mejorar su técnica y estilo en la pista." },
+  { title: "Élite", description: "Un nivel avanzado para aquellos que buscan la excelencia y un enfoque profesional." },
+];
+
+const pedagogicalFocus = [
+  {
+    title: "Profesor",
+    description: "Formación pedagógica para guiar a futuras generaciones en el mundo de la danza.",
+    icon: "mdi:school-outline",
+  },
+  {
+    title: "Coreógrafo",
+    description: "Habilidades creativas para diseñar y dirigir coreografías originales.",
+    icon: "mdi:pencil-outline",
+  },
+  {
+    title: "Competidor",
+    description: "Entrenamiento intensivo y preparación para destacarse en competencias de baile.",
+    icon: "mdi:trophy-outline",
+  },
+  {
+    title: "Bailarín / Intérprete",
+    description: "Entrenamiento completo para interpretar piezas en el escenario.",
+    icon: "mdi:trending-up",
+  },
+];
+---
+
+<div class="bg-gradient-to-br from-blue-100 via-blue-100 to-blue-100 py-16">
+  <div class="mt-16 md:mt-0 px-4">
+    <h2 class="text-4xl lg:text-5xl font-bold text-center lg:tracking-tight text-blue-700">
+      Formación en Estilos de Danza
+    </h2>
+    <p class="text-lg mt-4 text-center text-slate-600 max-w-2xl mx-auto">
+      Ofrecemos una variedad de géneros y técnicas para desarrollar una formación integral en danza.
+    </p>
+  </div>
+
+  <!-- Sección de Géneros -->
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-16 gap-12 px-6">
+    {features.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="bg-blue-600 rounded-full p-3 w-10 h-10 flex items-center justify-center shadow-lg">
+          <Icon class="text-white text-lg" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl text-gray-800">{item.title}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <div class="mt-20">
+    <h2 class="text-4xl lg:text-5xl font-bold text-center lg:tracking-tight text-blue-700">
+      Enfoque Pedagógico
+    </h2>
+    <p class="text-lg mt-4 text-center text-slate-600 max-w-2xl mx-auto">
+      Formamos a nuestros estudiantes para que puedan destacar en múltiples áreas dentro del mundo de la danza.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-4 mt-12 gap-12 px-6">
+    {pedagogicalFocus.map((item) => (
+      <div class="flex gap-4 items-start">
+        <div class="bg-blue-600 rounded-full p-3 w-10 h-10 flex items-center justify-center shadow-lg">
+          <Icon class="text-white text-lg" name={item.icon} />
+        </div>
+        <div>
+          <h3 class="font-semibold text-xl text-gray-800">{item.title}</h3>
+          <p class="text-slate-500 mt-2 leading-relaxed">{item.description}</p>
+        </div>
+      </div>
+    ))}
+  </div>
+
+  <!-- Niveles -->
+  <div class="mt-20">
+    <h2 class="text-4xl lg:text-5xl font-bold text-center text-blue-700 lg:tracking-tight">
+      Niveles de Formación
+    </h2>
+    <p class="text-lg mt-4 text-center text-slate-600 max-w-2xl mx-auto">
+      Cada estudiante puede avanzar de acuerdo a sus habilidades y metas personales.
+    </p>
+  </div>
+
+  <div class="grid sm:grid-cols-2 md:grid-cols-3 mt-12 gap-12 px-6">
+    {levels.map((level) => (
+      <div class="flex flex-col items-center text-center bg-white p-6 rounded-lg shadow-lg hover:shadow-xl transition-shadow duration-300">
+        <h3 class="font-semibold text-xl text-blue-600">{level.title}</h3>
+        <p class="text-slate-500 mt-2 leading-relaxed">{level.description}</p>
+      </div>
+    ))}
+  </div>
+</div>
