@@ -20,18 +20,15 @@ tags: [General]
   </h2>
 
   <p style="text-align: justify; font-size: 18px; line-height: 1.8; margin-bottom: 30px;">
-    La Academia de Baile Indigos Gakkou ofrece un currículo integrador ofreciendo lo mejor de las danzas de calle y danzas modernas como lo son: Hip Hop Dance, House Dance, Vogue, Popping, Clases Coreográficas, K-Pop Dance Cover, Foundation Class y Freestyle Session. Funcionamos bajo 3 lapsos de 4 meses de duración aproximadamente en donde se imparten como base, en cada uno de los lapsos, los géneros de baile que manejamos los profesores a la fecha de redactado este documento:
+    La Academia de Baile Indigos Gakkou ofrece un currículo integrador ofreciendo lo mejor de las danzas de calle y danzas modernas como lo son: Hip Hop Dance, House Dance, Vogue, Popping, Clases Coreográficas, K-Pop Dance Cover, Foundation Class y Freestyle Session. Funcionamos bajo 2 lapsos de 6 meses de duración aproximadamente en donde se imparten como base, en cada uno de los lapsos, los géneros de baile que manejamos los profesores a la fecha de redactado este documento:
   </p>
 
   <ul style="list-style-type: none; padding: 0; font-size: 18px; line-height: 1.8;">
     <li style="margin-bottom: 10px;">
-      <i class="fas fa-calendar-alt text-blue-700" style="margin-right: 10px;"></i> Enero – Abril: Popping
+      <i class="fas fa-calendar-alt text-blue-700" style="margin-right: 10px;"></i> Enero – Junio: Hip Hop Dance.
     </li>
     <li style="margin-bottom: 10px;">
-      <i class="fas fa-calendar-alt text-blue-700" style="margin-right: 10px;"></i> Mayo – Agosto: Hip Hop Dance
-    </li>
-    <li style="margin-bottom: 10px;">
-      <i class="fas fa-calendar-alt text-blue-700" style="margin-right: 10px;"></i> Septiembre – Diciembre: House Dance / Vogue
+      <i class="fas fa-calendar-alt text-blue-700" style="margin-right: 10px;"></i> Julio - Diciembre: House Dance y Vogue.
     </li>
   </ul>
 
