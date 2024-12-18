@@ -9,8 +9,8 @@ import { Icon } from "astro-icon/components";
 import andrewImage from "assets/Andrew.jpg";
 import rogerImage from "assets/Roger.jpg";
 import adalmarImage from "assets/Adalmar.jpg";
-import joelImage from "assets/Joel.jpg";
-import yorlanImage from "assets/Yorlan.jpeg";
+import joelImage from "assets/Joel.jpeg";
+import yorlanImage from "assets/Yorlan.jpg";
 
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
