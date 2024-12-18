@@ -11,6 +11,7 @@ import rogerImage from "assets/Roger.jpg";
 import adalmarImage from "assets/Adalmar.jpg";
 import joelImage from "assets/Joel.jpeg";
 import yorlanImage from "assets/Yorlan.jpg";
+import joseImage from "assets/Jose.jpg";
 
 const publishedTeamMembers = await getCollection("team", ({ data }) => {
   return !data.draft && data.publishDate < new Date();
@@ -54,6 +55,23 @@ const publishedTeamMembers = await getCollection("team", ({ data }) => {
                 "3er lugar en 'Desafío al Movimiento (DAM) 2018'.",
                 "1er lugar en 'MDLD Caracas 2021'.",
                 "Jurado en eventos de K-Pop Dance Cover.",
+                                "Ganador de la Ares Battle 2024",
+                "Ganador en el FIB del Primer Lugar. Categorías en Grupo Small Juvenil - Adulto y Profesional",
+              ],
+            },
+            {
+              name:"José Jaimes",
+              title: "Bailarín, Coreógrafo y Profesor",
+              image: joseImage,
+              role: "Instructor",
+              details: [
+                "12 años de experiencia en el ámbito laboral.",
+                "Bailarín de Bailando Soy Imbatible.",
+                "Bailarín de Miss Venezuela 2019.",
+                "Ex Bailarín del Ballet de Venevisión.",
+                "Integrante del Crew Musa Crew Elite.",
+                "Ganador de la Ares Battle 2024",
+                "Ganador en el FIB del Primer Lugar. Categorías en Grupo Small Juvenil - Adulto y Profesional",
               ],
             },
             {
