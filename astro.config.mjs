@@ -5,7 +5,7 @@ import sitemap from "@astrojs/sitemap";
 import icon from "astro-icon";
 
 export default defineConfig({
-  site: "https://astroship.web3templates.com",
+  site: "https://i.postimg.cc/QC74WPrc/",
   integrations: [
     tailwind(),
     mdx(),
