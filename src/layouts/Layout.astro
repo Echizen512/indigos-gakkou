@@ -13,7 +13,7 @@ export interface Props {
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
 
 const resolvedImageWithDomain = new URL(
-  "/meta.jpg",
+  "/opengraph.jpg",
   Astro.site
 ).toString();
 
@@ -34,18 +34,18 @@ const makeTitle = title
     <meta name="generator" content={Astro.generator} />
     <SEO
       title={makeTitle}
-      description="Formación de bailarines profesionales."
+      description="Astroship is a starter website template for Astro built with TailwindCSS."
       canonical={canonicalURL}
       twitter={{
-        creator: "@Echizen512",
-        site: "@indigos-gakkou",
+        creator: "@surjithctly",
+        site: "@web3templates",
         card: "summary_large_image",
       }}
       openGraph={{
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Indigos Gakkou | Formación de bailarines profesionales`,
+          title: `Astroship - Starter Template for Astro`,
           image: resolvedImageWithDomain,
         },
         image: {
