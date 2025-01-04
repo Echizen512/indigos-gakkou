@@ -5,23 +5,15 @@ import Navbar from "@components/navbar/navbar.astro";
 import "@fontsource-variable/inter/index.css";
 import '@fontsource-variable/bricolage-grotesque';
 
-
 export interface Props {
   title: string;
 }
 
 const canonicalURL = new URL(Astro.url.pathname, Astro.site).toString();
-
-const resolvedImageWithDomain = new URL(
-  "/opengraph.jpg",
-  Astro.site
-).toString();
-
+const resolvedImageWithDomain = new URL("/opengraph.jpg", Astro.site).toString();
 const { title } = Astro.props;
 
-const makeTitle = title
-  ? title + " | Indigos"
-  : "Indigos Gakkou | Formación de bailarines profesionales";
+const makeTitle = title ? title + " | Indigos" : "Indigos Gakkou | Formación de bailarines profesionales";
 ---
 
 <!DOCTYPE html>
@@ -32,6 +24,26 @@ const makeTitle = title
     <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <meta name="generator" content={Astro.generator} />
+    
+    <!-- Primary Meta Tags -->
+    <title>Indigos Gakkou | Formación de bailarines profesionales</title>
+    <meta name="title" content="Indigos Gakkou | Formación de bailarines profesionales" />
+    <meta name="description" content="Formación de bailarines profesionales." />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://indigos-gakkou.vercel.app/" />
+    <meta property="og:title" content="Indigos Gakkou | Formación de bailarines profesionales" />
+    <meta property="og:description" content="Formación de bailarines profesionales." />
+    <meta property="og:image" content="https://metatags.io/images/meta-tags.png" />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://indigos-gakkou.vercel.app/" />
+    <meta property="twitter:title" content="Indigos Gakkou | Formación de bailarines profesionales" />
+    <meta property="twitter:description" content="Formación de bailarines profesionales." />
+    <meta property="twitter:image" content="https://metatags.io/images/meta-tags.png" />
+
     <SEO
       title={makeTitle}
       description="Formación de bailarines profesionales."
@@ -45,7 +57,7 @@ const makeTitle = title
         basic: {
           url: canonicalURL,
           type: "website",
-          title: `Indigos Gakkou | Formación de bailarines profesionales`,
+          title: "Indigos Gakkou | Formación de bailarines profesionales",
           image: resolvedImageWithDomain,
         },
         image: {
