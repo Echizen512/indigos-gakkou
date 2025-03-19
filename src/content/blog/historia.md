@@ -8,7 +8,7 @@ alt: "Historia de Indigos Gakkou"
 }
 publishDate: "2024-12-17 12:00"
 category: "Historia"
-author: "Andrew Pérez"
+author: "José Jaimes"
 tags: [Historia, Filosofía, Danza]
 ---
 
@@ -22,7 +22,7 @@ tags: [Historia, Filosofía, Danza]
 
 <h2 style="text-align: center; font-weight: bold; font-size: 28px; margin-bottom: 20px;"> <i class="fas fa-question-circle text-blue-700" style="margin-right: 10px;"></i> ¿Por qué Indigos y por qué Gakkou? </h2>
 
-<p style="text-align: justify; font-size: 18px; line-height: 1.8; margin-bottom: 30px;"> La idea de Indigos surgió de la profunda conexión que el profesor Andrew Pérez tenía con la cultura Hip Hop, y el deseo de ofrecer un espacio único para aquellos con una visión diferente de la vida. El nombre "Indigos" proviene de los niños índigo, un término que describe a individuos con habilidades excepcionales y características por encima del promedio, tanto en lo físico como en lo intelectual. </p>
+<p style="text-align: justify; font-size: 18px; line-height: 1.8; margin-bottom: 30px;"> La idea de Indigos surgió de la profunda conexión que el profesor José Jaimes tenía con la cultura Hip Hop, y el deseo de ofrecer un espacio único para aquellos con una visión diferente de la vida. El nombre "Indigos" proviene de los niños índigo, un término que describe a individuos con habilidades excepcionales y características por encima del promedio, tanto en lo físico como en lo intelectual. </p>
 
 <p style="text-align: justify; font-size: 18px; line-height: 1.8; margin-bottom: 30px;"> Inspirado por el artista Canserbero y su uso del término "Indigo" en sus letras, y con una profunda admiración por la cultura japonesa y el código samurai (Bushido), el profesor Andrew incorporó estos elementos para formar la filosofía que rige la academia. De esta forma, se crea Indigos Gakkou, un lugar donde los estudiantes no solo aprenden a bailar, sino también a romper paradigmas y desarrollar una mentalidad creativa y disciplinada. </p>
 

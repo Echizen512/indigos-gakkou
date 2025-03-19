@@ -8,7 +8,7 @@ image: {
 }
 publishDate: "2024-09-12 15:39"
 category: "General"
-author: "Andrew Pérez"
+author: "José Jaimes"
 tags: [General]
 ---
 
